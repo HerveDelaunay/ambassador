@@ -18,7 +18,7 @@ const FaqItem: FC<FaqItemProps> = ({ question, answers }) => {
       >
         <div className="flex-1">
           <p className="relative font-bold text-xl text-white">
-            <span className="group-hover:text-secondary-100">{question}</span>
+            <span className="group-hover:text-[#FF4D4D]">{question}</span>
           </p>
         </div>
         <svg
@@ -28,7 +28,7 @@ const FaqItem: FC<FaqItemProps> = ({ question, answers }) => {
           strokeWidth="1.5"
           stroke={"currentColor"}
           aria-hidden="true"
-          className="ml-2 h-8 w-8 text-gray-50 transition-transform duration-1000 group-hover:text-secondary-100"
+          className="ml-2 h-8 w-8 text-gray-50 transition-transform duration-1000 group-hover:text-[#FF4D4D]"
           style={
             isFaqItemOpened
               ? { transform: "rotate(405deg)" }

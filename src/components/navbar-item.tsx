@@ -15,7 +15,7 @@ const NavbarItem: FC<Link> = ({ title, subtitles }) => {
               .map(({ subtitle, url }, i) => (
                 <a href={url} key={i}>
                   <p className="relative font-bold text-base text-white">
-                    <span className="cursor-pointer whitespace-nowrap hover:text-secondary-100">
+                    <span className="cursor-pointer whitespace-nowrap hover:text-[#FF4D4D]">
                       {subtitle}
                     </span>
                   </p>
