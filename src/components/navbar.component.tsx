@@ -3,6 +3,7 @@ import NavbarItems from "./navbar-items.component";
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+
   const updateScrollPosition = () => {
     setScrollPosition(window.scrollY);
   };
@@ -48,7 +49,7 @@ const Navbar = () => {
             <p className="relative font-medium text-base text-gray.100">
               Explorer
             </p>
-            <span className="ml-2 flex h-6 w-6 items-center justify-center rounded-md border-2 border-gray.100 border-opacity-40">
+            <span className="ml-2 flex h-6 w-6 items-center justify-center rounded-md border-2 border-opacity-40">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

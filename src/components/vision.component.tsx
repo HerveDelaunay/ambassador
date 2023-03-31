@@ -100,8 +100,6 @@ const Vision = () => {
             </a>
           </p>
         </div>
-        {/* <span className="w-[11px] h-[11px] rounded-full border-2 border-[#444] mb-1"></span>
-        <div className="w-0 border-l-[1px] border-dashed border-[#444] h-[209px]"></div> */}
         <span className="h-[100px] w-[1px] bg-gradient-to-b from-black to-[#F9CB28]"></span>
         <div className="flex flex-col justify-start items-center w-full mb-4">
           <div className="rounded-full bg-gradient-to-r from-[#FF4D4D] to-[#F9CB28] w-10 h-10 flex justify-center items-center mb-6">
@@ -111,7 +109,7 @@ const Vision = () => {
             Apply
           </h3>
           <div className="flex">
-            <div className="flex flex-col items-center mr-20">
+            <div className="flex flex-col items-center mr-16">
               <h4 className="text-transparent bg-clip-text bg-gradient-to-b from-[#FFF] to-[#ffffffbf] font-bold text-[60px] tracking-tight mb-6">
                 Be a Masscot
               </h4>
