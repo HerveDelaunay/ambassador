@@ -7,7 +7,7 @@ import Vision from "./components/vision.component";
 
 function App() {
   return (
-    <div className=" overflow-y-auto bg-[#00000B] font-museo">
+    <div className="overflow-y-auto bg-[#00000B] font-museo selection:bg-[#FF4D4D] selection:text-white">
       <Navbar />
       <Ambassador />
       <Vision />

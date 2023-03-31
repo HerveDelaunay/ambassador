@@ -11,8 +11,8 @@ const Faq = () => {
         </p>
       </div>
       <div className="mt-6 space-y-2 tablet:mt-12">
-        {faqData.map(({ question, answers }) => (
-          <FaqItem question={question} answers={answers} />
+        {faqData.map(({ question, answers }, i) => (
+          <FaqItem question={question} answers={answers} key={i} />
         ))}
       </div>
     </div>

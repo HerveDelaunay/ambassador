@@ -3,7 +3,7 @@ import Button from "./button.component";
 
 const Vision = () => {
   return (
-    <div className="bg-[#00000B] mt-20">
+    <div className="bg-[#00000B] mt-40">
       <div className="font-bold text-small text-[#888] m-auto max-w-desktop text-center">
         EXPLORE MASSA'S WAY
       </div>
@@ -30,6 +30,7 @@ const Vision = () => {
           <img
             className="order-2 col-span-full m-auto rounded-2xl desktop:col-span-6 desktop:order-2 desktop:h-96 desktop:w-[496px]"
             src="/assets/images/decentralization-warrior.jpeg"
+            alt="futuristic warrior"
           />
         </div>
         <div className="grid w-full grid-cols-4 gap-4 tablet:grid-cols-8 tablet:gap-5 desktop:grid-cols-12 desktop:gap-8 mb-28">
@@ -47,6 +48,7 @@ const Vision = () => {
           <img
             className="order-1 col-span-full m-auto rounded-2xl desktop:col-span-6 desktop:order-1 desktop:h-96 desktop:w-[496px]"
             src="/assets/images/build-with-love.webp"
+            alt="two hands representing love"
           />
         </div>
         <div className="grid w-full grid-cols-4 gap-4 tablet:grid-cols-8 tablet:gap-5 desktop:grid-cols-12 desktop:gap-8 mb-28">
@@ -65,6 +67,7 @@ const Vision = () => {
           <img
             className="order-2 col-span-full m-auto rounded-2xl desktop:col-span-6 desktop:order-2 desktop:h-96 desktop:w-[496px]"
             src="/assets/images/jet-engine.jpg"
+            alt="jet engine"
           />
         </div>
         <div className="flex flex-col justify-start items-center w-full">

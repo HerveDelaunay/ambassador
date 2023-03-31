@@ -1,4 +1,14 @@
-export const linksData = [
+export type Subtitle = {
+  subtitle: string;
+  url: string;
+};
+
+export type Link = {
+  title: string;
+  subtitles: Subtitle[];
+};
+
+export const linksData: Link[] = [
   {
     title: "About",
     subtitles: [
@@ -45,3 +55,5 @@ export const linksData = [
     ],
   },
 ];
+
+export const excludedSubtitles = ["Privacy Policy", "Terms of services"];

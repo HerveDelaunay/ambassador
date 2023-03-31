@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 
-type Props = {
+type ButtonProps = {
   url: string;
   text: string;
   disabled?: string;
 };
 
-const Button: FC<Props> = ({ url, text, disabled }) => {
+const Button: FC<ButtonProps> = ({ url, text, disabled }) => {
   return (
     <a
       href={url}

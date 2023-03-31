@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-6 z-100 w-full desktop:block">
-      <div className="m-auto flex h-full max-w-[40%] flex-col px-5 tablet:px-22px desktop:px-11  justify-start">
+      <div className="m-auto flex h-full max-w-desktop w-full flex-col px-5 tablet:px-22px desktop:px-11 justify-start">
         <div className="relative flex justify-between rounded-lg bg-white bg-opacity-[0.08] before:absolute before:-z-10 before:h-full before:w-full before:backdrop-blur-[5px]">
           <div className="relative flex flex-1 px-4">
             <div
@@ -53,13 +53,13 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="w-3 h-3"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
                 ></path>
               </svg>

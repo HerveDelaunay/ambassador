@@ -1,11 +1,11 @@
 import React, { FC, useState } from "react";
 
-type Props = {
+type FaqItemProps = {
   question: string;
   answers: string[];
 };
 
-const FaqItem: FC<Props> = ({ question, answers }) => {
+const FaqItem: FC<FaqItemProps> = ({ question, answers }) => {
   const [isFaqItemOpened, setisFaqItemOpened] = useState(false);
 
   const handleItemClick = () => setisFaqItemOpened(!isFaqItemOpened);
@@ -25,10 +25,10 @@ const FaqItem: FC<Props> = ({ question, answers }) => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke={"#888"}
+          strokeWidth="1.5"
+          stroke={"currentColor"}
           aria-hidden="true"
-          className="ml-2 h-8 w-8 text-gray.50 transition-transform duration-1000 group-hover:text-secondary-100"
+          className="ml-2 h-8 w-8 text-gray-50 transition-transform duration-1000 group-hover:text-secondary-100"
           style={
             isFaqItemOpened
               ? { transform: "rotate(405deg)" }
@@ -36,8 +36,8 @@ const FaqItem: FC<Props> = ({ question, answers }) => {
           }
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
           ></path>
         </svg>
@@ -51,8 +51,8 @@ const FaqItem: FC<Props> = ({ question, answers }) => {
         }
       >
         <div className="mt-4 flex flex-col tablet:mt-8 text-[#888] leading-6">
-          {answers.map((answer) => (
-            <p>{answer}</p>
+          {answers.map((answer, i) => (
+            <p key={i}>{answer}</p>
           ))}
         </div>
       </div>

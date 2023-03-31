@@ -4,6 +4,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      zIndex: {
+        100: "100",
+      },
       fontFamily: {
         museo: ["museo", "sans-serif"],
       },
